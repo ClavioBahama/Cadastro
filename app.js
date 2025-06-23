@@ -131,12 +131,6 @@ const mailOptions = {
     res.send(`Bem-vindo, ${user.name}! Logado com sucesso!`);
   });
 });
-
-// Iniciar servidor
-app.listen(3000, () => {
-  console.log('Servidor rodando na porta 3000!');
-});
-
 // Resto do teu código (rotas /register e /login) aqui...
 
 app.listen(process.env.PORT || 3000, () => {
